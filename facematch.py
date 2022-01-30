@@ -68,6 +68,6 @@ for thisFile in dirhash:
        # Save the image to a seperate folder if there is a match
        if results[0] == True:
            match_file = os.path.join(match_path, thisFile)
-           print (thisFile + " is a match, copying to " + match_file)
+           print (thisFile + " is a match, moving to " + match_file)
            move(
                file_name, match_file)
